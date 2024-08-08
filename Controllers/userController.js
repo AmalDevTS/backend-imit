@@ -1,6 +1,6 @@
 const users = require('../Models/userSchema')
 
-exports.register =  async(req,res)=>{
+exports.post =  async(req,res)=>{
     const image = req.file.filename;
     console.log(image);
     console.log("inside user controller: register function");

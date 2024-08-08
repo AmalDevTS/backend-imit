@@ -9,7 +9,7 @@ const router = new express.Router();
 
 
 
-router.post('/user/upload',multerConfig.single('image'),usercontroller.register)
+router.post('/user/upload',multerConfig.single('image'),usercontroller.post)
 
 router.get('/user/project',usercontroller.getMainProject)
 
