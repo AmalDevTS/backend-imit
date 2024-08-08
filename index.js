@@ -34,5 +34,9 @@ dServer.listen(PORT,()=>{
     console.log("server is running in port:",PORT);
 })
 
+dServer.get('/',(req,res)=>{
+    res.send("Social Media Server is running successfully")
+})
+
 
 
